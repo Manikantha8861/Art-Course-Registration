@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Art Course Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+<body>
+
+<div class="form-container">
+    <h2>Art Course Registration</h2>
+    <form id="registrationForm" action="submit.php" method="POST">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="course">Choose a Course:</label>
+        <select id="course" name="course" required>
+            <option value="">--Select a Course--</option>
+            <option value="drawing">Drawing</option>
+            <option value="painting">Painting</option>
+            <option value="digital_art">Digital Art</option>
+            <option value="sculpture">Sculpture</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>Experience Level:</label>
+        <div class="experience-level">
+            <label><input type="radio" name="experience" value="Beginner" required> Beginner</label>
+            <label><input type="radio" name="experience" value="Intermediate" required> Intermediate</label>
+            <label><input type="radio" name="experience" value="Advanced" required> Advanced</label>
+        </div>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Add any additional details"></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
